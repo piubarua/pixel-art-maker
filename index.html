@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka One">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+<body>
+    <header id="header">
+        <i class="fas fa-paint-brush" style="color: rgb(83, 11, 11)"></i> Pixel Art Maker
+    </header>
+
+
+    <div class="container-fluid">
+        <div class="row" id="container">
+            <div class="col-12 design">
+                <h2 class="flex-grow-1">Design Canvas</h2>
+
+                <!--The pixel table-->
+                <table id="pixelCanvas">
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit">
+    </form>
+    <div class="color-selector ">
+        <h4 style="color:brown;">Color <i class="fas fa-palette"></i></h4>
+        <!-- Color picker -->
+        <input type="color" id="colorPicker" value="#ffeb3b">
+    </div>
+
+
+    <footer id="footer">
+        <p><i class="fas fa-code"></i> with <i class="fas fa-heart" style="color: red;"></i> by <strong>SHREE BARUA</strong></a> using <i class="fab fa-html5" style="color: #e44d26;"></i>, <i class="fab fa-css3" style="color: #22A7F0;"></i> and <i class="fab fa-js-square" style="color: #4CAF50;"></i></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
